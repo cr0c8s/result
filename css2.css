@@ -187,22 +187,14 @@ button {
     transition: 0.2s;
 }
 .button-with-icon {
-    background-image: url("font/svgs-full/solid/shuffle.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    border: none;
+    background-image: url("../font/svgs-full/solid/shuffle.svg");
 }
+
 .button-with-icon:active {
     opacity: 0.8;
 }
 #themeBtn {
-    background-image: url("font/svgs-full/solid/refresh.svg");
-    background-color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url("../font/svgs-full/solid/refresh.svg");
 }
 button:hover {
     transform: scale(1.05);
