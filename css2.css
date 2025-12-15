@@ -187,14 +187,14 @@ button {
     transition: 0.2s;
 }
 .button-with-icon {
-    background-image: url("../font/svgs-full/solid/shuffle.svg");
+    background-image: url("font/shuffle.svg");
 }
 
 .button-with-icon:active {
     opacity: 0.8;
 }
 #themeBtn {
-    background-image: url("../font/svgs-full/solid/refresh.svg");
+    background-image: url("font/refresh.svg");
 }
 button:hover {
     transform: scale(1.05);
