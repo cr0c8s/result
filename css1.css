@@ -1,0 +1,148 @@
+* {
+    margin-left: -0.1px;
+    margin-top: -0.1px;
+}   
+.header {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    margin-left: -7px;
+    margin-top: -74px;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 10;
+}
+.block1 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Отступ слева */
+}
+.image {
+    margin-top: 7px;
+    margin-left: -10px;
+    width: 50px;
+    height: 50px;
+}
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    margin-top: 71px;
+    width: 100%;
+}
+
+
+.header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 22px;
+    font-weight: bold;
+
+    /* —–– Тени —–– */
+    text-shadow:
+        0 0 6px rgba(255, 255, 255, 0.6),
+        0 0 12px rgba(180, 0, 255, 0.4),
+        0 0 20px rgba(150, 0, 255, 0.3);
+}
+
+.block2 {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Расстояние между элементами */
+    margin-right: 20px; /* Отступ справа */
+}
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* показывает ВСЮ фотографию */
+}
+.slider {
+    background-color: transparent; /* прозрачный фон контейнера */
+    object-fit: contain;
+}
+a {
+    text-decoration: none;
+}
+.slider,
+.slides,
+.slide {
+    background: none !important;
+}
+/* === АДАПТИВНОСТЬ === */
+
+/* --- Планшеты (до 900px) --- */
+@media (max-width: 900px) {
+    .header {
+        height: 55px;
+    }
+
+    .image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .block2 {
+        gap: 15px;
+    }
+}
+
+/* --- Телефоны (до 600px) --- */
+@media (max-width: 600px) {
+    .header1 {
+        padding: 0 10px;
+    }
+
+    .header {
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .block2 {
+        gap: 10px;
+    }
+
+    .block2 a {
+        font-size: 14px;
+    }
+
+    .block2 i {
+        font-size: 14px;
+    }
+}
+
+/* --- Очень маленькие экраны (до 400px) --- */
+@media (max-width: 400px) {
+    .header1 {
+        justify-content: center;
+    }
+
+    /* Перестраиваем меню: иконки + ссылки в колонку */
+    .block2 {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .header {
+        height: auto;
+        padding: 8px 0;
+    }
+
+    .content {
+        margin-top: 90px;
+    }
+}
