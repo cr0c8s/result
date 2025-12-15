@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Страница не найдена</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at top, #222, #000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.7);
+    box-shadow: 0 0 40px rgba(255,255,255,0.1);
+}
+
+h1 {
+    font-size: 96px;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ffcc00;
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+    <h1>404</h1>
+    <p>Ты свернул не туда</p>
+    <button onclick="goHome()">На главную</button>
+</div>
+
+<script>
+function goHome() {
+    window.location.href = "/mine/version2.html";
+}
+</script>
+</body>
+</html>
