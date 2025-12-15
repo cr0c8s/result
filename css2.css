@@ -187,7 +187,7 @@ button {
     transition: 0.2s;
 }
 .button-with-icon {
-    background-image: url("D:/1 курс/втвин/лаба7/font/svgs-full/solid/refresh.svg");
+    background-image: url("./font/svgs-full/solid/shuffle.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
@@ -199,7 +199,7 @@ button {
     opacity: 0.8;
 }
 #themeBtn {
-    background-image: url("D:/1 курс/втвин/лаба7/font/svgs-full/solid/shuffle.svg");
+    background-image: url("./font/svgs-full/solid/refresh.svg");
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
